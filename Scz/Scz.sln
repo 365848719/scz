@@ -9,6 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.WebApi", "Scz.WebApi\Sc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.WebApi2", "Scz.WebApi2\Scz.WebApi2.csproj", "{BAF442DD-91EC-4756-B766-224369F6DFD2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 UI", "01 UI", "{D18A3C4D-D5D3-4D61-B82E-AE348237FF53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Application Service", "02 Application Service", "{B0887A47-1730-4224-9AE7-24598CEBF214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Domain", "03 Domain", "{175EE48E-EFCC-4F22-85ED-5A2D28EC9916}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Infrastructure", "04 Infrastructure", "{C501D509-F4F2-4F33-A3BD-B5B9C91F14CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

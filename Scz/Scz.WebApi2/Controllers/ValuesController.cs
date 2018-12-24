@@ -10,7 +10,10 @@ namespace Scz.WebApi2.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        /// <summary>
+        /// 我的测试，GET api/values
+        /// </summary>
+        /// <returns>IEnumerable</returns>
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {

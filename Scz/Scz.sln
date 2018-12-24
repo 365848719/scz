@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Domain", "03 Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Infrastructure", "04 Infrastructure", "{C501D509-F4F2-4F33-A3BD-B5B9C91F14CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.Web", "Scz.Web\Scz.Web.csproj", "{300F1A29-BCF4-4EE6-9CD3-CCB061B2D51D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.Web", "Scz.Web\Scz.Web.csproj", "{300F1A29-BCF4-4EE6-9CD3-CCB061B2D51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.ConsoleApp", "Scz.ConsoleApp\Scz.ConsoleApp.csproj", "{DB24E7A3-0E87-48FB-9381-5BCEFE167748}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{300F1A29-BCF4-4EE6-9CD3-CCB061B2D51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300F1A29-BCF4-4EE6-9CD3-CCB061B2D51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300F1A29-BCF4-4EE6-9CD3-CCB061B2D51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB24E7A3-0E87-48FB-9381-5BCEFE167748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB24E7A3-0E87-48FB-9381-5BCEFE167748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB24E7A3-0E87-48FB-9381-5BCEFE167748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB24E7A3-0E87-48FB-9381-5BCEFE167748}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

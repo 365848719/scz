@@ -50,12 +50,7 @@ namespace Scz.WebApi
             services.Configure<StarInfo>(this.Configuration.GetSection("StarInfo"));
             services.Configure<ServiceAddress>(this.Configuration.GetSection("ServiceAddress"));
 
-            //注册Swagger生成器，定义一个和多个Swagger 文档
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-                
-            });
+
 
         }
 
@@ -73,15 +68,7 @@ namespace Scz.WebApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
-
-            //启用中间件服务生成Swagger作为JSON终结点
-            app.UseSwagger();
-            //启用中间件服务对swagger-ui，指定Swagger JSON终结点
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.RoutePrefix = string.Empty;
-            });
+           
 
         }
     }

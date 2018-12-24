@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Scz.2019\Scz.WebApi\Scz.WebApi2\Scz.WebApi2.xml</DocumentationFile>
+    <DocumentationFile>C:\scz.git\trunk\Scz\Scz.WebApi2\Scz.WebApi2.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

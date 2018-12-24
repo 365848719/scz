@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -11,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Scz.WebApi
 {
@@ -27,7 +30,7 @@ namespace Scz.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+         
             services.AddApiVersioning(o =>
             {
                 o.ReportApiVersions = true;
@@ -36,8 +39,7 @@ namespace Scz.WebApi
 
                 o.ApiVersionReader = ApiVersionReader.Combine(
                     new QueryStringApiVersionReader(),
-                    new HeaderApiVersionReader()
-                    {
+                    new HeaderApiVersionReader(){
                         HeaderNames = { "x-api-version" }
                     }
                     );
@@ -47,6 +49,13 @@ namespace Scz.WebApi
             //读取配置信息
             services.Configure<StarInfo>(this.Configuration.GetSection("StarInfo"));
             services.Configure<ServiceAddress>(this.Configuration.GetSection("ServiceAddress"));
+
+            //注册Swagger生成器，定义一个和多个Swagger 文档
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                
+            });
 
         }
 
@@ -64,6 +73,16 @@ namespace Scz.WebApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            //启用中间件服务生成Swagger作为JSON终结点
+            app.UseSwagger();
+            //启用中间件服务对swagger-ui，指定Swagger JSON终结点
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
+
         }
     }
 }

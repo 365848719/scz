@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="抽象访问者角色">
+    <Position X="4.792" Y="1.396" Height="0.385" Width="1.231" />
+  </Comment>
+  <Comment CommentText="具体抽象访问者角色">
+    <Position X="3.073" Y="4.062" Height="0.385" Width="1.45" />
+  </Comment>
+  <Comment CommentText="结构对象角色">
+    <Position X="0.781" Y="1.24" Height="0.385" Width="1.231" />
+  </Comment>
+  <Comment CommentText="抽象节点角色">
+    <Position X="9.49" Y="1.26" Height="0.385" Width="1.137" />
+  </Comment>
+  <Comment CommentText="具体节点角色">
+    <Position X="7.969" Y="3.427" Height="0.385" Width="1.054" />
+  </Comment>
+  <Class Name="Scz.DesignPattern.ObjectStructure">
+    <Position X="0.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\ObjectStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.Element">
+    <Position X="9.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.ElementA">
+    <Position X="8" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\ElementA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.ElementB">
+    <Position X="11.25" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\ElementB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.ConcreteVisitor">
+    <Position X="4.75" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\ConcreteVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Scz.DesignPattern.IVisitor">
+    <Position X="4.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>行为型模式\访问者模式\IVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

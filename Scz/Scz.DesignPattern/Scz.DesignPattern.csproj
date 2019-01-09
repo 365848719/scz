@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{432C09D9-8636-4EC3-805E-1DB0C3557F5E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scz.DesignPattern</RootNamespace>
+    <AssemblyName>Scz.DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractCardPartner.cs" />
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="AbstractMediator.cs" />
+    <Compile Include="MediatorPater.cs" />
+    <Compile Include="PartnerA.cs" />
+    <Compile Include="PartnerB.cs" />
+    <Compile Include="行为型模式\状态模式\Account.cs" />
+    <Compile Include="Adapter.cs" />
+    <Compile Include="AppleBoard.cs" />
+    <Compile Include="AppleFactory.cs" />
+    <Compile Include="AppleScreen.cs" />
+    <Compile Include="创建型模式\建造者模式\Benz.cs" />
+    <Compile Include="创建型模式\建造者模式\BMW.cs" />
+    <Compile Include="行为型模式\责任链模式\Boss.cs" />
+    <Compile Include="Caretaker.cs" />
+    <Compile Include="行为型模式\观察者模式\Cat.cs" />
+    <Compile Include="行为型模式\模板方法模式\ChineseCabagge.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="ColorDemo.cs" />
+    <Compile Include="ColorPicker.cs" />
+    <Compile Include="行为型模式\命令模式\Command.cs" />
+    <Compile Include="ComplexGraphics.cs" />
+    <Compile Include="行为型模式\命令模式\ConcreteCommand.cs" />
+    <Compile Include="ConcreteIterator.cs" />
+    <Compile Include="ConcreteList.cs" />
+    <Compile Include="行为型模式\访问者模式\ConcreteVisitor.cs" />
+    <Compile Include="ContactMemento.cs" />
+    <Compile Include="ContactPerson.cs" />
+    <Compile Include="结构型模式\装饰模式\Accessories.cs" />
+    <Compile Include="创建型模式\建造者模式\Builder.cs" />
+    <Compile Include="创建型模式\建造者模式\Computer.cs" />
+    <Compile Include="创建型模式\建造者模式\ConcreteBuilder1.cs" />
+    <Compile Include="创建型模式\建造者模式\ConcreteBuilder2.cs" />
+    <Compile Include="创建型模式\建造者模式\Director.cs" />
+    <Compile Include="创建型模式\建造者模式\Director2.cs" />
+    <Compile Include="结构型模式\桥接模式\DriverManager.cs" />
+    <Compile Include="行为型模式\访问者模式\Element.cs" />
+    <Compile Include="行为型模式\访问者模式\ElementA.cs" />
+    <Compile Include="行为型模式\访问者模式\ElementB.cs" />
+    <Compile Include="行为型模式\策略模式\EnterpriseTaxStrategy.cs" />
+    <Compile Include="行为型模式\状态模式\GoldState.cs" />
+    <Compile Include="Graphics.cs" />
+    <Compile Include="行为型模式\责任链模式\GroupLeader.cs" />
+    <Compile Include="行为型模式\责任链模式\Handler.cs" />
+    <Compile Include="创建型模式\建造者模式\IBuilder.cs" />
+    <Compile Include="IColorDemo.cs" />
+    <Compile Include="结构型模式\桥接模式\IDriver.cs" />
+    <Compile Include="IListCollection.cs" />
+    <Compile Include="行为型模式\策略模式\InterestOperation.cs" />
+    <Compile Include="行为型模式\命令模式\Invoker.cs" />
+    <Compile Include="行为型模式\观察者模式\IObserver.cs" />
+    <Compile Include="IProvider.cs" />
+    <Compile Include="ISender.cs" />
+    <Compile Include="结构型模式\代理模式\ISourceable.cs" />
+    <Compile Include="ITargetable.cs" />
+    <Compile Include="行为型模式\策略模式\ITaxStrategy.cs" />
+    <Compile Include="Iterator.cs" />
+    <Compile Include="行为型模式\访问者模式\IVisitor.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="MailProvider.cs" />
+    <Compile Include="MailSender.cs" />
+    <Compile Include="行为型模式\责任链模式\Manager.cs" />
+    <Compile Include="MobileOwner.cs" />
+    <Compile Include="行为型模式\观察者模式\Observer2.cs" />
+    <Compile Include="MiBoard.cs" />
+    <Compile Include="MiFactory.cs" />
+    <Compile Include="MiScreen.cs" />
+    <Compile Include="MotherBoard.cs" />
+    <Compile Include="行为型模式\观察者模式\Mouse.cs" />
+    <Compile Include="结构型模式\桥接模式\MyDriverManager.cs" />
+    <Compile Include="结构型模式\桥接模式\MySqDriver.cs" />
+    <Compile Include="NotifyStudent.cs" />
+    <Compile Include="行为型模式\访问者模式\ObjectStructure.cs" />
+    <Compile Include="结构型模式\桥接模式\OracleDriver.cs" />
+    <Compile Include="行为型模式\观察者模式\Master.cs" />
+    <Compile Include="行为型模式\策略模式\PersonTaxStrategy.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="结构型模式\代理模式\Proxy.cs" />
+    <Compile Include="行为型模式\命令模式\Receiver.cs" />
+    <Compile Include="行为型模式\状态模式\RedState.cs" />
+    <Compile Include="RegisterCourse.cs" />
+    <Compile Include="RegisterFacade.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="SenderFactory.cs" />
+    <Compile Include="SendFactory2.cs" />
+    <Compile Include="SendFactory3.cs" />
+    <Compile Include="SerializableHelper.cs" />
+    <Compile Include="行为型模式\状态模式\SilverState.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SmsFactory.cs" />
+    <Compile Include="SmsSender.cs" />
+    <Compile Include="结构型模式\代理模式\Source.cs" />
+    <Compile Include="行为型模式\模板方法模式\Spinach.cs" />
+    <Compile Include="结构型模式\桥接模式\SqlServerDriver.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="行为型模式\观察者模式\Subject.cs" />
+    <Compile Include="行为型模式\观察者模式\Subscriber.cs" />
+    <Compile Include="行为型模式\观察者模式\TenXun.cs" />
+    <Compile Include="行为型模式\观察者模式\TenXun2.cs" />
+    <Compile Include="行为型模式\观察者模式\TenXunGame.cs" />
+    <Compile Include="行为型模式\模板方法模式\Vegetabel.cs" />
+    <Compile Include="Wrapper.cs" />
+    <Compile Include="结构型模式\装饰模式\ApplePhone.cs" />
+    <Compile Include="结构型模式\装饰模式\Decorator.cs" />
+    <Compile Include="结构型模式\装饰模式\Phone.cs" />
+    <Compile Include="结构型模式\装饰模式\Sticker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="创建型模式\工厂模式\简单工厂模式3.cd" />
+    <None Include="创建型模式\工厂模式\简单工厂模式2.cd" />
+    <None Include="行为型模式\中介模式.cd" />
+    <None Include="行为型模式\命令模式\命令模式.cd" />
+    <None Include="文档\学习记录.xlsx" />
+    <None Include="结构型模式\享元模式.cd" />
+    <None Include="结构型模式\代理模式\代理模式.cd" />
+    <None Include="创建型模式\单件模式.cd" />
+    <None Include="创建型模式\原型模式.cd" />
+    <None Include="创建型模式\抽象工厂模式.cd" />
+    <None Include="创建型模式\建造者模式\建造者模式.cd" />
+    <None Include="文档\建造者模式.docx" />
+    <None Include="结构型模式\外观模式.cd" />
+    <None Include="结构型模式\组合模式.cd" />
+    <None Include="行为型模式\备忘录模式.cd" />
+    <None Include="行为型模式\模板方法模式\模板方法模式.cd" />
+    <None Include="行为型模式\状态模式\状态模式.cd" />
+    <None Include="行为型模式\策略模式\策略模式.cd" />
+    <None Include="结构型模式\装饰模式\装饰模式.cd" />
+    <None Include="结构型模式\适配器模式\对象的适配器模式.cd" />
+    <None Include="结构型模式\桥接模式\桥接模式.cd" />
+    <None Include="创建型模式\工厂模式\简单工厂模式.cd" />
+    <None Include="创建型模式\工厂方法模式.cd" />
+    <None Include="结构型模式\适配器模式\类的适配器模式.cd" />
+    <None Include="行为型模式\观察者模式\观察者模式.cd" />
+    <None Include="行为型模式\访问者模式\访问者模式.cd" />
+    <None Include="行为型模式\责任链模式\责任链模式.cd" />
+    <None Include="行为型模式\迭代器模式.cd" />
+    <None Include="行为型模式\观察者模式\观察者模式2.cd" />
+    <None Include="行为型模式\观察者模式\观察者模式3.cd" />
+    <None Include="访问者模式.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="文档\创建型模式.txt" />
+    <Content Include="文档\结构型模式.txt" />
+    <Content Include="文档\行为型模式.txt" />
+    <Content Include="文档\设计模式.jpg" />
+    <Content Include="文档\设计模式.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

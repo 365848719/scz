@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Scz.ConsoleApp
 {
@@ -6,6 +7,11 @@ namespace Scz.ConsoleApp
     {
         static void Main(string[] args)
         {
+            string a = "2019年01月09日";
+            IFormatProvider culture = new CultureInfo("zh-CN", true);
+            DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日",culture);
+            Console.WriteLine(dt);
+
             TestExcute();
 
             Console.WriteLine( 3 * 10 / 12 );

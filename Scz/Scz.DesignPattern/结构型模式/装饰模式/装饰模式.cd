@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="抽象：装饰角色">
+    <Position X="4.375" Y="3.031" Height="0.344" Width="1.263" />
+  </Comment>
+  <Comment CommentText="具体：装饰角色">
+    <Position X="2.75" Y="5.917" Height="0.312" Width="1.263" />
+  </Comment>
+  <Comment CommentText="抽象：构件角色">
+    <Position X="5.5" Y="0.802" Height="0.354" Width="1.2" />
+  </Comment>
+  <Comment CommentText="具体：构件角色">
+    <Position X="10.302" Y="0.833" Height="0.375" Width="1.335" />
+  </Comment>
+  <Class Name="Scz.DesignPattern.Accessories">
+    <Position X="4.25" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>结构型模式\装饰模式\Accessories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.Sticker">
+    <Position X="7.75" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>结构型模式\装饰模式\Sticker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.Phone">
+    <Position X="5.5" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>结构型模式\装饰模式\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.ApplePhone">
+    <Position X="10.25" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>结构型模式\装饰模式\ApplePhone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scz.DesignPattern.Decorator">
+    <Position X="5.75" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAA=</HashCode>
+      <FileName>结构型模式\装饰模式\Decorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

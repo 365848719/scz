@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ConsoleApp
+namespace Scz.ConsoleApp
 {
    public class ExampleDemo
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.C7
+namespace Scz.ConsoleApp.C7
 {
     class C7Test
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp
+namespace Scz.ConsoleApp
 {
     public class OrderProcessor : IOrderProcessor
     {

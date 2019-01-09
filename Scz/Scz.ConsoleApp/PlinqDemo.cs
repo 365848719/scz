@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+namespace Scz.ConsoleApp
 {
     public class PlinqDemo
     {

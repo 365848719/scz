@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp
+﻿namespace Scz.ConsoleApp
 {
     public interface IOrderProcessor
     {

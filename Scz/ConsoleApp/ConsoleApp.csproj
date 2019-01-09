@@ -14,6 +14,9 @@
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,11 +29,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -98,36 +98,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AOP\Order.cs" />
-    <Compile Include="AOP\IOrderProcessor.cs" />
-    <Compile Include="AOP\OrderProcessor.cs" />
-    <Compile Include="AOP\OrderProcessorDecorator.cs" />
-    <Compile Include="C7\C7Test.cs" />
-    <Compile Include="ExampleDemo.cs" />
-    <Compile Include="GenericDemo.cs" />
-    <Compile Include="LinqDemo.cs" />
-    <Compile Include="LookupExampleDemo.cs" />
-    <Compile Include="MyJsonReader.cs" />
     <Compile Include="OracleTest.cs" />
-    <Compile Include="PlinqDataSample.cs" />
-    <Compile Include="PlinqDemo.cs" />
-    <Compile Include="PlinqDemo2.cs" />
     <Compile Include="PostSharp\AspectAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DynamicObjectDemo.cs" />
-    <Compile Include="TaskDemo.cs" />
-    <Compile Include="TupleDemo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AOP\aop.cd" />
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Plinqdata.csv" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -136,12 +115,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Autofac\" />
-    <Folder Include="AutoMapper\" />
-    <Folder Include="Cache\" />
-    <Folder Include="Config\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Comment CommentText="抽象主题">
-    <Position X="4.292" Y="0.646" Height="0.406" Width="1.7" />
+    <Position X="3" Y="0.646" Height="0.406" Width="1.7" />
   </Comment>
   <Comment CommentText="真实主题">
     <Position X="1.229" Y="3.198" Height="0.375" Width="1.138" />
@@ -26,10 +26,10 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Scz.DesignPattern.Proxy.ISourceable">
-    <Position X="6.25" Y="0.5" Width="1.75" />
+    <Position X="5.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>代理模式\ISourceable.cs</FileName>
+      <FileName>ISourceable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Microsoft YaHei UI" Size="9" />

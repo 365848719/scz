@@ -6,7 +6,10 @@ namespace Scz.DesignPattern.Facade
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Student student = new Student();
+            student.SelectCourse();
+
+            Console.Read();
         }
     }
 }

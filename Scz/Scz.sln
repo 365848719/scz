@@ -47,55 +47,64 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.EntityFrameworkCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Adapter", "Scz.DesignPattern.Adapter\Scz.DesignPattern.Adapter.csproj", "{48BCFB5A-33C5-4C70-B0F4-7E1B84E1138E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.DelegationMode", "Scz.DesignPattern.DelegationModel\Scz.DesignPattern.DelegationMode.csproj", "{934BE65E-29B5-4E92-967C-08BBFFB40B72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.DelegationMode", "Scz.DesignPattern.DelegationModel\Scz.DesignPattern.DelegationMode.csproj", "{934BE65E-29B5-4E92-967C-08BBFFB40B72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Strategy", "Scz.DesignPattern.Strategy\Scz.DesignPattern.Strategy.csproj", "{F73CDCF4-5BC9-4036-86A5-AD4AED2E9B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Strategy", "Scz.DesignPattern.Strategy\Scz.DesignPattern.Strategy.csproj", "{F73CDCF4-5BC9-4036-86A5-AD4AED2E9B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Proxy", "Scz.DesignPattern.Proxy\Scz.DesignPattern.Proxy.csproj", "{BD421D9C-4261-4FAD-BD52-56B4B4902AE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Proxy", "Scz.DesignPattern.Proxy\Scz.DesignPattern.Proxy.csproj", "{BD421D9C-4261-4FAD-BD52-56B4B4902AE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.FactoryMethod", "Scz.DesignPattern.FactoryMethod\Scz.DesignPattern.FactoryMethod.csproj", "{E64C2BE4-24D0-484E-B335-C3410D10E18D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.FactoryMethod", "Scz.DesignPattern.FactoryMethod\Scz.DesignPattern.FactoryMethod.csproj", "{E64C2BE4-24D0-484E-B335-C3410D10E18D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "创建型", "创建型", "{1AC9D60C-CB82-46B9-8AB9-BADAF4FD8126}"
+	ProjectSection(SolutionItems) = preProject
+		创建型重点.txt = 创建型重点.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{12A3B4F0-8B16-4D95-84B7-81604886D534}"
+	ProjectSection(SolutionItems) = preProject
+		结构型重点.txt = 结构型重点.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "行为型", "行为型", "{F571C638-229A-450C-BDC5-2FFD87ACF7C5}"
+	ProjectSection(SolutionItems) = preProject
+		行为型重点.txt = 行为型重点.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Builder", "Scz.DesignPattern.Builder\Scz.DesignPattern.Builder.csproj", "{7DC3C595-8F39-48F3-82A7-AD42266F2A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Builder", "Scz.DesignPattern.Builder\Scz.DesignPattern.Builder.csproj", "{7DC3C595-8F39-48F3-82A7-AD42266F2A8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Prototype", "Scz.DesignPattern.Prototype\Scz.DesignPattern.Prototype.csproj", "{E99F82C4-F7D3-448B-A048-42DF1A228F37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Prototype", "Scz.DesignPattern.Prototype\Scz.DesignPattern.Prototype.csproj", "{E99F82C4-F7D3-448B-A048-42DF1A228F37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.AbstractFactory", "Scz.DesignPattern.AbstractFactory\Scz.DesignPattern.AbstractFactory.csproj", "{B0E976CB-AE0E-4C83-B6CD-56723E949508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.AbstractFactory", "Scz.DesignPattern.AbstractFactory\Scz.DesignPattern.AbstractFactory.csproj", "{B0E976CB-AE0E-4C83-B6CD-56723E949508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Bridge", "Scz.DesignPattern.Bridge\Scz.DesignPattern.Bridge.csproj", "{424A4475-9D2C-4148-8776-24C7E35375CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Bridge", "Scz.DesignPattern.Bridge\Scz.DesignPattern.Bridge.csproj", "{424A4475-9D2C-4148-8776-24C7E35375CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Facade", "Scz.DesignPattern.Facade\Scz.DesignPattern.Facade.csproj", "{6F41D7CA-D0C6-46CA-BEA7-12A9114B7509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Facade", "Scz.DesignPattern.Facade\Scz.DesignPattern.Facade.csproj", "{6F41D7CA-D0C6-46CA-BEA7-12A9114B7509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Decorator", "Scz.DesignPattern.Decorator\Scz.DesignPattern.Decorator.csproj", "{93D1A4A5-733F-46A2-9F6D-270106144D29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Decorator", "Scz.DesignPattern.Decorator\Scz.DesignPattern.Decorator.csproj", "{93D1A4A5-733F-46A2-9F6D-270106144D29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Composite", "Scz.DesignPattern.Composite\Scz.DesignPattern.Composite.csproj", "{55A1FB2D-A740-4E3E-A3F3-CA1A9B581C89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Composite", "Scz.DesignPattern.Composite\Scz.DesignPattern.Composite.csproj", "{55A1FB2D-A740-4E3E-A3F3-CA1A9B581C89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Flyweight", "Scz.DesignPattern.Flyweight\Scz.DesignPattern.Flyweight.csproj", "{0B976B05-4D0F-4A3D-ADCA-B02322AE7D01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Flyweight", "Scz.DesignPattern.Flyweight\Scz.DesignPattern.Flyweight.csproj", "{0B976B05-4D0F-4A3D-ADCA-B02322AE7D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.TemplateMethod", "Scz.DesignPattern.TemplateMethod\Scz.DesignPattern.TemplateMethod.csproj", "{2543CB28-5B26-4550-A945-FED7390CB705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.TemplateMethod", "Scz.DesignPattern.TemplateMethod\Scz.DesignPattern.TemplateMethod.csproj", "{2543CB28-5B26-4550-A945-FED7390CB705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Command", "Scz.DesignPattern.Command\Scz.DesignPattern.Command.csproj", "{2069A14F-A1E6-417E-9478-A2BB09445719}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Command", "Scz.DesignPattern.Command\Scz.DesignPattern.Command.csproj", "{2069A14F-A1E6-417E-9478-A2BB09445719}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Observer", "Scz.DesignPattern.Observer\Scz.DesignPattern.Observer.csproj", "{FE4208BA-F8A7-438D-8C7C-0E816CD1F8D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Observer", "Scz.DesignPattern.Observer\Scz.DesignPattern.Observer.csproj", "{FE4208BA-F8A7-438D-8C7C-0E816CD1F8D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Iterator", "Scz.DesignPattern.Iterator\Scz.DesignPattern.Iterator.csproj", "{6C027B37-9C9F-4629-BC9D-BBEDBBA4AAA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Iterator", "Scz.DesignPattern.Iterator\Scz.DesignPattern.Iterator.csproj", "{6C027B37-9C9F-4629-BC9D-BBEDBBA4AAA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Mediator", "Scz.DesignPattern.Mediator\Scz.DesignPattern.Mediator.csproj", "{E2E5F017-06E0-446E-B696-0848676D7B1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Mediator", "Scz.DesignPattern.Mediator\Scz.DesignPattern.Mediator.csproj", "{E2E5F017-06E0-446E-B696-0848676D7B1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.State", "Scz.DesignPattern.State\Scz.DesignPattern.State.csproj", "{57AB9041-8710-4C3E-8BC1-C74B1F02E7FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.State", "Scz.DesignPattern.State\Scz.DesignPattern.State.csproj", "{57AB9041-8710-4C3E-8BC1-C74B1F02E7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.ChainOfResponsibility", "Scz.DesignPattern.ChainOfResponsibility\Scz.DesignPattern.ChainOfResponsibility.csproj", "{2B2DE20E-885F-4484-8952-353035C3DBF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.ChainOfResponsibility", "Scz.DesignPattern.ChainOfResponsibility\Scz.DesignPattern.ChainOfResponsibility.csproj", "{2B2DE20E-885F-4484-8952-353035C3DBF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Visitor", "Scz.DesignPattern.Visitor\Scz.DesignPattern.Visitor.csproj", "{2CCFDE25-F3AF-4671-8502-5717CF0EC14B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Visitor", "Scz.DesignPattern.Visitor\Scz.DesignPattern.Visitor.csproj", "{2CCFDE25-F3AF-4671-8502-5717CF0EC14B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Memento", "Scz.DesignPattern.Memento\Scz.DesignPattern.Memento.csproj", "{36AC7CA8-77CE-4106-8464-849F318B6FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Memento", "Scz.DesignPattern.Memento\Scz.DesignPattern.Memento.csproj", "{36AC7CA8-77CE-4106-8464-849F318B6FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.Interpreter", "Scz.DesignPattern.Interpreter\Scz.DesignPattern.Interpreter.csproj", "{C9E09A57-27CB-4B42-8C3F-BEB97D9F37DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Interpreter", "Scz.DesignPattern.Interpreter\Scz.DesignPattern.Interpreter.csproj", "{C9E09A57-27CB-4B42-8C3F-BEB97D9F37DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

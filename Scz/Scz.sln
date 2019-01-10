@@ -23,6 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.ConsoleApp", "Scz.Conso
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 设计模式", "05 设计模式", "{241C9D22-973C-4089-B45B-4B6131B6E8EE}"
 	ProjectSection(SolutionItems) = preProject
+		常用设计模式.txt = 常用设计模式.txt
 		Scz.DesignPattern\文档\设计模式.jpg = Scz.DesignPattern\文档\设计模式.jpg
 	EndProjectSection
 EndProject

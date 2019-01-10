@@ -337,19 +337,7 @@ namespace Scz.DesignPattern
             invoker.ExcuteCommand();
         }
 
-        /// <summary>
-        /// 策略模式
-        /// </summary>
-        public static void StrategyPattern()
-        {
-            var operation = new InterestOperation(new PersonTaxStrategy());
-            Console.WriteLine("个人所得税为：{0}", operation.GetTax(5000));
-
-            operation = new InterestOperation(new EnterpriseTaxStrategy());
-            Console.WriteLine("企业所得税为：{0}", operation.GetTax(5000));
-
-            Console.Read();
-        }
+        
 
         /// <summary>
         /// 组合模式
@@ -530,14 +518,7 @@ namespace Scz.DesignPattern
             withStickerAndAccessories.Print();
         }
 
-        /// <summary>
-        /// 代理模式
-        /// </summary>
-        public static void DoProxy()
-        {
-            Proxy proxy = new Proxy();
-            proxy.Method1();
-        }
+        
 
         /// <summary>
         /// 抽象工厂模式

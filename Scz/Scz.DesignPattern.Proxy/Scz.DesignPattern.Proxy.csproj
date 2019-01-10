@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="代理模式\" />
+    <Compile Remove="代理模式\**" />
+    <EmbeddedResource Remove="代理模式\**" />
+    <None Remove="代理模式\**" />
   </ItemGroup>
 
 </Project>

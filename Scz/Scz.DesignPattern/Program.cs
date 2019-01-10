@@ -50,12 +50,6 @@ namespace Scz.DesignPattern
         public static void StructualMode()
         {
            
-            DoAdapter2();
-            Console.WriteLine();
-
-            DoAdapter();
-            Console.WriteLine();
-
             DoBridge();
             Console.WriteLine();
 
@@ -65,8 +59,6 @@ namespace Scz.DesignPattern
             DoDecorator();
             Console.WriteLine();
 
-            DoProxy();
-            Console.WriteLine();
 
             DoFacade();
             Console.WriteLine();
@@ -101,7 +93,7 @@ namespace Scz.DesignPattern
             DoCommand();
             Console.Read();
 
-            StrategyPattern();
+            //StrategyPattern();
             Console.Read();
 
             DoStatePattern();
@@ -439,27 +431,9 @@ namespace Scz.DesignPattern
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// 类的适配器模式
-        /// </summary>
-        public static void DoAdapter()
-        {
-            Adapter apdater = new Adapter();
-            apdater.Method1();
-            apdater.Method2();
-        }
+       
 
-        /// <summary>
-        /// 对象适配器模式
-        /// </summary>
-        public static void DoAdapter2()
-        {
-            Source source = new Source();
-            Wrapper wrapper = new Wrapper(source);
-            wrapper.Method1();
-            wrapper.Method2();
-        }
-     
+         
 
         /// <summary>
         /// 外观模式

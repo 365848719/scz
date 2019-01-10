@@ -9,6 +9,8 @@ namespace Scz.DesignPattern.FactoryMethod
             IFactory factory = new SmsFactory();
             ISender sender = factory.Produce();
             sender.Send();
+
+            Console.ReadKey();
         }
     }
 }

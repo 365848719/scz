@@ -6,7 +6,15 @@ namespace Scz.DesignPattern.AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AbstractFactory factory = new AppleFactory();
+            Screen screen = factory.CreateScreen();
+            screen.Print();
+
+            Board board = factory.CreateMotherBoard();
+            board.Print();
+
+            Console.ReadKey();
+
         }
     }
 }

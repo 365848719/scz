@@ -6,7 +6,11 @@ namespace Scz.DesignPattern.Builder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IBuilder builder = new Benz();
+            Director director = new Director();
+            director.Constructor(builder);
+
+            Console.Read();
         }
     }
 }

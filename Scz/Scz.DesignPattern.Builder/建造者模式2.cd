@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Scz.DesignPattern.Builder.Director2">
-    <Position X="4.25" Y="1.25" Width="2.75" />
+    <Position X="3.75" Y="1.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Director2.cs</FileName>

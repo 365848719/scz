@@ -8,10 +8,12 @@ namespace Scz.DesignPattern.Builder
 {
    public class Director2
     {
-        public void Construct(Builder builder)
+        public Computer Construct(Builder builder)
         {
             builder.BuildPartCpu();
             builder.BuildPartMainBoard();
+
+            return builder.GetComputer();
         }
     }
 }

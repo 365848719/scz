@@ -6,7 +6,8 @@ namespace Scz.DesignPattern.TemplateMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Vegetabel vegetabel = new Spinach();
+            vegetabel.Cook();
         }
     }
 }

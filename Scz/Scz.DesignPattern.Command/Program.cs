@@ -6,7 +6,12 @@ namespace Scz.DesignPattern.Command
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Receiver r = new Receiver();
+            Command command = new ConcreteCommand(r);
+
+            Invoker invoker = new Invoker(command);
+            invoker.ExcuteCommand();
+
         }
     }
 }

@@ -10,7 +10,6 @@
     <Folder Include="AutoMapper\" />
     <Folder Include="Cache\" />
     <Folder Include="Config\" />
-    <Folder Include="Ioc\" />
   </ItemGroup>
 
   <ItemGroup>

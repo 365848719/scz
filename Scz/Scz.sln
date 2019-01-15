@@ -67,6 +67,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "行为型", "行为型", "{F571C638-229A-450C-BDC5-2FFD87ACF7C5}"
 	ProjectSection(SolutionItems) = preProject
+		Scz.DesignPattern\文档\行为型模式.txt = Scz.DesignPattern\文档\行为型模式.txt
 		行为型重点.txt = 行为型重点.txt
 	EndProjectSection
 EndProject
@@ -106,7 +107,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Memento",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Interpreter", "Scz.DesignPattern.Interpreter\Scz.DesignPattern.Interpreter.csproj", "{C9E09A57-27CB-4B42-8C3F-BEB97D9F37DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.MigrationsDemo", "Scz.MigrationsDemo\Scz.MigrationsDemo.csproj", "{7717B0DE-A1D8-4D1B-BADC-7A0FBAE5132D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.MigrationsDemo", "Scz.MigrationsDemo\Scz.MigrationsDemo.csproj", "{7717B0DE-A1D8-4D1B-BADC-7A0FBAE5132D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

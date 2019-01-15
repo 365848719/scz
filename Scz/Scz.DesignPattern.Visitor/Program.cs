@@ -6,7 +6,20 @@ namespace Scz.DesignPattern.Visitor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DoVisitorPattern();
         }
+
+        /// <summary>
+        /// 访问者模式
+        /// </summary>
+        public static void DoVisitorPattern()
+        {
+            ObjectStructure s = new ObjectStructure();
+            foreach (var item in s.Elements)
+            {
+                item.Accept(new ConcreteVisitor());
+            }
+        }
+
     }
 }

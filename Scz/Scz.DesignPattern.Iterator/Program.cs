@@ -6,7 +6,23 @@ namespace Scz.DesignPattern.Iterator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DoIteratorPattern();
+        }
+
+        /// <summary>
+        /// 迭代器模式
+        /// </summary>
+        public static void DoIteratorPattern()
+        {
+            Iterator iterator;
+            IListCollection list = new ConcreteList();
+            iterator = list.GetIterator();
+
+            while (iterator.MoveNext())
+            {
+                Console.WriteLine(iterator.GetCurrent());
+                iterator.Next();
+            }
         }
     }
 }

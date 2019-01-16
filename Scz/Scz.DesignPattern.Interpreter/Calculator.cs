@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Scz.DesignPattern.Interpreter
 {
+    /// <summary>
+    /// 客户类
+    /// </summary>
     public class Calculator
     {
         private string expression;
@@ -35,10 +38,12 @@ namespace Scz.DesignPattern.Interpreter
             Expression right = null;
             Stack<Expression> stack = new Stack<Expression>();
             stack.Push(left);
+
             for (int i = 1; i < vars.Length; i += 2)
             {
                 left = stack.Pop();
                 right = new VariableExpression(vars[i + 1]);
+
                 switch (vars[i])
                 {
                     case '+':
@@ -55,6 +60,7 @@ namespace Scz.DesignPattern.Interpreter
                         break;
                 }
             }
+
             double value = stack.Pop().Interpret(this.context);
             stack.Clear();
 

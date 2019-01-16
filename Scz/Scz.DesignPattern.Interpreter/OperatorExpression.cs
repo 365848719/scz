@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Scz.DesignPattern.Interpreter
 {
+    /// <summary>
+    /// 非终结符表达式
+    /// </summary>
     public abstract class OperatorExpression : Expression
     {
         protected Expression left;

@@ -6,7 +6,14 @@ namespace Scz.DesignPattern.Interpreter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string expression = "a+b-c*a+d/a";
+            Console.WriteLine(expression);
+
+            Calculator c = new Calculator(expression);
+            var value = c.Calculate();
+
+            Console.WriteLine( "得到：" + value);
+            Console.ReadLine();
         }
     }
 }

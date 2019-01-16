@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Comment CommentText="抽象命令角色">
     <Position X="5.521" Y="0.698" Height="0.344" Width="1.263" />
   </Comment>
@@ -13,7 +13,7 @@
     <Position X="3.74" Y="4.24" Height="0.344" Width="1.263" />
   </Comment>
   <Class Name="Scz.DesignPattern.Command.ConcreteCommand">
-    <Position X="5.25" Y="4" Width="2.75" />
+    <Position X="5.5" Y="4" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>ConcreteCommand.cs</FileName>

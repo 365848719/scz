@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Scz.DesignPattern.Interpreter
 {
+    /// <summary>
+    /// 终结符表达式
+    /// </summary>
     class VariableExpression : Expression
     {
         private char key;

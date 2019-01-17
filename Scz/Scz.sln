@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 设计模式", "05 设�
 	ProjectSection(SolutionItems) = preProject
 		常用设计模式.txt = 常用设计模式.txt
 		Scz.DesignPattern\文档\设计模式.jpg = Scz.DesignPattern\文档\设计模式.jpg
+		Scz.DesignPattern\文档\设计模式.txt = Scz.DesignPattern\文档\设计模式.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Singleton", "Scz.DesignPattern.Singleton\Scz.DesignPattern.Singleton.csproj", "{ABA7A4FE-45E5-4DA2-87FC-A4248C0ED81A}"
@@ -62,6 +63,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "创建型", "创建型", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{12A3B4F0-8B16-4D95-84B7-81604886D534}"
 	ProjectSection(SolutionItems) = preProject
+		Scz.DesignPattern\文档\结构型模式.txt = Scz.DesignPattern\文档\结构型模式.txt
 		结构型重点.txt = 结构型重点.txt
 	EndProjectSection
 EndProject
@@ -109,7 +111,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.Interpret
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.MigrationsDemo", "Scz.MigrationsDemo\Scz.MigrationsDemo.csproj", "{7717B0DE-A1D8-4D1B-BADC-7A0FBAE5132D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.DesignPattern.SimpleFactory", "Scz.DesignPattern.SimpleFactory\Scz.DesignPattern.SimpleFactory.csproj", "{8D3DA067-1D25-4D49-871C-2A820DFE23AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.DesignPattern.SimpleFactory", "Scz.DesignPattern.SimpleFactory\Scz.DesignPattern.SimpleFactory.csproj", "{8D3DA067-1D25-4D49-871C-2A820DFE23AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -431,7 +433,7 @@ Global
 		{88A28A1F-EF54-4223-9A76-EA0E25479919} = {B0887A47-1730-4224-9AE7-24598CEBF214}
 		{6EE63522-0FAE-49B7-8769-6C45BC54561A} = {C501D509-F4F2-4F33-A3BD-B5B9C91F14CE}
 		{48BCFB5A-33C5-4C70-B0F4-7E1B84E1138E} = {12A3B4F0-8B16-4D95-84B7-81604886D534}
-		{934BE65E-29B5-4E92-967C-08BBFFB40B72} = {12A3B4F0-8B16-4D95-84B7-81604886D534}
+		{934BE65E-29B5-4E92-967C-08BBFFB40B72} = {241C9D22-973C-4089-B45B-4B6131B6E8EE}
 		{F73CDCF4-5BC9-4036-86A5-AD4AED2E9B62} = {F571C638-229A-450C-BDC5-2FFD87ACF7C5}
 		{BD421D9C-4261-4FAD-BD52-56B4B4902AE2} = {12A3B4F0-8B16-4D95-84B7-81604886D534}
 		{E64C2BE4-24D0-484E-B335-C3410D10E18D} = {1AC9D60C-CB82-46B9-8AB9-BADAF4FD8126}

@@ -47,7 +47,6 @@ namespace ConsoleApp
         {
             var arg = "tmall";
             Console.WriteLine($"original argument:{arg}");
-            PostSharpTest(ref arg);
             Console.Read();
 
             //AopTest();
@@ -66,16 +65,7 @@ namespace ConsoleApp
 
         
 
-        [MyAspect]
-        public static void PostSharpTest(ref string arg)
-        {
-            Console.WriteLine($"real argument:{arg}");
-            Thread.Sleep(1000);
-            Console.WriteLine("finished");
-        }
-
-        
-
+       
 
 
         private static void DealDouble()

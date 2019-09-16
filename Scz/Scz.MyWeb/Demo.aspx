@@ -11,46 +11,60 @@
         .divUl {
         }
 
+        .myDiv {
+        }
 
-            .divUl ul {
+            .myDiv ul {
                 list-style: none;
             }
 
-                .divUl ul li {
+                .myDiv ul li {
                     float: left;
                     width: 300px;
+                    font-size: 16px;
+                    text-align: center;
+                    height: 50px;
                 }
 
-                    .divUl ul li dl {
-                        display: none;
+        .divUl ul {
+            list-style: none;
+        }
+
+            .divUl ul li {
+                float: left;
+                width: 300px;
+            }
+
+                .divUl ul li dl {
+                    display: none;
+                }
+
+                    .divUl ul li dl dd {
+                        float: left;
+                        width: 40px;
+                        border: 1px solid red;
+                        display: inline;
                     }
 
-                        .divUl ul li dl dd {
-                            float: left;
+
+                        .divUl ul li dl dd a {
                             width: 40px;
-                            border: 1px solid red;
-                            display: inline;
-                        }
-
-
-                         .divUl ul li dl dd a{
-                            width:40px;
-                            text-decoration:none;
+                            text-decoration: none;
                             color: #FF0000;
                         }
 
-                         .divUl ul li dl dd a:hover{
-                            color: #FF00FF;
-                         cursor:pointer;
-                        }
+                            .divUl ul li dl dd a:hover {
+                                color: #FF00FF;
+                                cursor: pointer;
+                            }
 
-                     .divUl ul li dl dd a:visited{
-                            color: #00FF00;
-                        }
+                            .divUl ul li dl dd a:visited {
+                                color: #00FF00;
+                            }
 
-                     .divUl ul li dl dd a:active{
-                            color: #00FF00;
-                        }
+                            .divUl ul li dl dd a:active {
+                                color: #00FF00;
+                            }
     </style>
 
 </head>
@@ -67,13 +81,14 @@
             <br />
             <asp:Label ID="lblJson" runat="server" Text=""></asp:Label>
 
+            <div class="myDiv"></div>
             <div class="divUl">
                 <ul>
                     <li>
                         <dl>
-                            <dd><a href="http://baidu.com" mykey ="1111">1</a></dd>
-                            <dd><a href="#" mykey ="222">2</a></dd>
-                            <dd><a href="http://qq.com" mykey ="333">3</a></dd>
+                            <dd><a href="http://baidu.com" mykey="1111">1</a></dd>
+                            <dd><a href="#" mykey="222">2</a></dd>
+                            <dd><a href="http://qq.com" mykey="333">3</a></dd>
                         </dl>
                     </li>
                     <li>
@@ -109,8 +124,15 @@
                 var jsonData = $(lbl).html();
                 var jsonObj = $.parseJSON(jsonData);
 
+
                 $.each(jsonObj, function (index, content) {
                     console.log(content);
+
+                    var _ul = "<ul>";
+                    var _li = "<li>" + "<span>" + content.Id + " || " + content.BirthDay + "</span></li>";
+                    _ul = _ul + _li + "</ul>";
+
+                    $(".myDiv").append(_ul);
                 });
 
                 return false;
@@ -119,7 +141,24 @@
             $(".divUl dd").click(function () {
                 alert($(this).find("a").attr("mykey"));
                 alert($(this).html());
+
+                window.open("http://sina.com.cn", "_blank");
             });
+
+
+            var jsonData = $(lbl).html();
+            var jsonObj = $.parseJSON(jsonData);
+
+            $.each(jsonObj, function (index, content) {
+                console.log(content);
+
+                var _ul = "<ul>";
+                var _li = "<li>" + "<span>" + content.Id + " || " + content.BirthDay + "</span></li>";
+                _ul = _ul + _li + "</ul>";
+
+                $(".myDiv").append(_ul);
+            });
+
         })
     </script>
 

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .divBox {
+            background: yellow;
+            height: 500px;
+        }
+
+        .left {
+            background: red;
+            float: left;
+            width: 200px;
+            height: 100%;
+        }
+
+        .center {
+            /*第一种用浮动，加上左右外边距，不用绝对定位 
+				这里我推荐把html中的right写在center的前面,如果按顺序写的话会把right挤到下面，感兴趣的可以自己试试
+			*/
+            /*margin: 0 200px;*/
+
+            /*第二种用浮动加绝对定位*/
+            /*position: absolute;
+			left: 200px;
+			right: 200px;*/
+
+            background: grey;
+            height: 500px;
+        }
+
+        .right {
+            background: green;
+            float: right;
+            width: 200px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divBox">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center"></div>
+    </div>
+
+</body>
+
+</html>

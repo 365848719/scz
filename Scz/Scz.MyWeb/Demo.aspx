@@ -129,7 +129,7 @@
                     console.log(content);
 
                     var _ul = "<ul>";
-                    var _li = "<li>" + "<span>" + content.Id + " || " + content.BirthDay + "</span></li>";
+                    var _li = "<li>" + "<span>" + content.id + " || " + content.birthDay + "</span></li>";
                     _ul = _ul + _li + "</ul>";
 
                     $(".myDiv").append(_ul);
@@ -153,7 +153,7 @@
                 console.log(content);
 
                 var _ul = "<ul>";
-                var _li = "<li>" + "<span>" + content.Id + " || " + content.BirthDay + "</span></li>";
+                var _li = "<li>" + "<span>" + content.id + " || " + content.birthDay + "</span></li>";
                 _ul = _ul + _li + "</ul>";
 
                 $(".myDiv").append(_ul);

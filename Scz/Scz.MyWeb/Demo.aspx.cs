@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,29 @@ namespace Scz.MyWeb
                     new Student{ Id = "1",Name = "scz",BirthDay = DateTime.Parse("2010-10-12 12:20:00")}
                 };
 
-                lblMsg.Text = JsonConvert.SerializeObject(list);
+
+                JsonSerializerSettings setting = new JsonSerializerSettings()
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    Formatting = Formatting.Indented
+                };
+
+                JsonConvert.DefaultSettings = new Func<JsonSerializerSettings>(() =>
+                {
+                    //日期类型默认格式化处理
+                    setting.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.MicrosoftDateFormat;
+                    setting.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+
+                    //空值处理
+                    setting.NullValueHandling = NullValueHandling.Ignore;
+
+
+                    //高级用法九中的Bool类型转换 设置
+                    //setting.Converters.Add(new BoolConvert("是,否"));
+                    return setting;
+                });
+
+                lblMsg.Text = JsonConvert.SerializeObject(list,setting);
             }
         }
     }

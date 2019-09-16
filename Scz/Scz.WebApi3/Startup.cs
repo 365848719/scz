@@ -35,6 +35,8 @@ namespace Scz.WebApi3
                 app.UseDeveloperExceptionPage();
             }
 
+
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

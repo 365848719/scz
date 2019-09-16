@@ -1,0 +1,8 @@
+﻿说明：
+本项目是一个Razor Page 练习的项目
+
+
+功能：
+1、展示Movie的信息，没有分页
+2、对Movie 进行Create、Edit、Delete、Detail 操作
+3、多个条件简单的查询

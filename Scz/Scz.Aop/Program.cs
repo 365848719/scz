@@ -4,9 +4,13 @@ namespace Scz.Aop
 {
     class Program
     {
+        static CoreBusiness cb = new CoreBusiness();
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            cb.Work_1();
+
+            Console.Read();
         }
     }
 }

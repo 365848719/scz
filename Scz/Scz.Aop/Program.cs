@@ -4,13 +4,21 @@ namespace Scz.Aop
 {
     class Program
     {
-        static CoreBusiness cb = new CoreBusiness();
 
         static void Main(string[] args)
         {
-            cb.Work_1();
+            AopTest();
 
             Console.Read();
         }
+
+        static void AopTest()
+        {
+            Order order = new Order() { Id = 1, Name = "lee", Count = 10, Price = 100.00, Desc = "订单测试" };
+            IOrderProcessor orderprocessor = new OrderProcessorDecorator(new OrderProcessor());
+            orderprocessor.Submit(order);
+            Console.ReadLine();
+        }
+
     }
 }

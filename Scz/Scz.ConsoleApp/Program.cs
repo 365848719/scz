@@ -43,6 +43,8 @@ namespace Scz.ConsoleApp
     {
         static void Main(string[] args)
         {
+            StaticClassMethod();
+
             string a = "2019年01月09日";
             IFormatProvider culture = new CultureInfo("zh-CN", true);
             DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日",culture);
@@ -77,11 +79,6 @@ namespace Scz.ConsoleApp
                 Name = x.Name,
                 Group = x.Group
             });
-
-            var ab = 0;
-
-            string filePath = @"c:\版本日志.json";
-            MyJsonReader.Read(filePath);
 
             var d = new A<int, string> { My = 5, Data = "1" };
             Console.Write(d.Data + d.My);
@@ -121,6 +118,16 @@ namespace Scz.ConsoleApp
         }
 
          
+        static void StaticClassMethod()
+        {
+            Console.WriteLine(User.Count);
+
+            var u = new User();
+            Console.WriteLine(User.Count);
+
+            var u2 = new User();
+            Console.WriteLine(User.Count);
+        }
 
         static void Method()
         {

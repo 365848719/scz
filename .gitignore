@@ -32,3 +32,12 @@
 /trunk/Scz/Scz.WebApi
 /Scz/Scz.AspNetWeb
 /Scz/Scz.MvcWeb
+/Scz/Scz.Algorithm/obj
+/Scz/Scz.Cache/obj
+/Scz/Scz.Config/obj
+/Scz/Scz.Database/obj/Debug
+*.user
+/Scz/Scz.GrpcService/obj/Debug/netcoreapp3.0
+/Scz/Scz.UnitTestProject/obj
+/Scz/Scz.WcfService/obj/Debug
+/Scz/Scz.XUnitTestProject/obj

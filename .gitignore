@@ -42,3 +42,8 @@
 /Scz/Scz.WcfService/obj/Debug
 /Scz/Scz.XUnitTestProject/obj
 /Scz/Scz.BlazorApp/obj/Debug/netcoreapp3.0
+/Scz/Scz.BlazorApp/obj
+/Scz/Scz.GrpcService/obj
+/Scz/Scz.WorkerService/obj
+/Scz/Scz.Database/Scz.Database.dbmdl
+/Scz/Scz.Database/Scz.Database.jfm

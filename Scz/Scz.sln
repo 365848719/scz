@@ -59,27 +59,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.AspNetWeb", "Scz.AspNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.MvcWeb", "Scz.MvcWeb\Scz.MvcWeb.csproj", "{3AABFEBC-F7E3-4066-9794-62C8656921F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.Cache", "Scz.Cache\Scz.Cache.csproj", "{CCA9C328-124C-4302-BCA4-D5CECE18A608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.Cache", "Scz.Cache\Scz.Cache.csproj", "{CCA9C328-124C-4302-BCA4-D5CECE18A608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.Config", "Scz.Config\Scz.Config.csproj", "{A7C27560-BED5-40BC-B0E5-6F9EAD75581C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.Config", "Scz.Config\Scz.Config.csproj", "{A7C27560-BED5-40BC-B0E5-6F9EAD75581C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.Algorithm", "Scz.Algorithm\Scz.Algorithm.csproj", "{91F14AC0-1098-4EA4-95B7-4B236B6BD8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.Algorithm", "Scz.Algorithm\Scz.Algorithm.csproj", "{91F14AC0-1098-4EA4-95B7-4B236B6BD8BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "数据库", "数据库", "{CDE8BEBD-219C-43D7-9A25-E566D10375C8}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Scz.Database", "Scz.Database\Scz.Database.sqlproj", "{86CD7703-9911-46C8-AA5E-869DBA748355}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.XUnitTestProject", "Scz.XUnitTestProject\Scz.XUnitTestProject.csproj", "{F893338E-C3DA-4D16-B750-24C6908BDD74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.XUnitTestProject", "Scz.XUnitTestProject\Scz.XUnitTestProject.csproj", "{F893338E-C3DA-4D16-B750-24C6908BDD74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.UnitTestProject", "Scz.UnitTestProject\Scz.UnitTestProject.csproj", "{310D6D58-6195-4AC6-BE41-FA0709D3A1E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.UnitTestProject", "Scz.UnitTestProject\Scz.UnitTestProject.csproj", "{310D6D58-6195-4AC6-BE41-FA0709D3A1E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "服务", "服务", "{CB07D4C1-1879-43F3-B137-459C8F358E67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.GrpcService", "Scz.GrpcService\Scz.GrpcService.csproj", "{67849211-1FB8-453C-A840-13E2EFAD8C3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.GrpcService", "Scz.GrpcService\Scz.GrpcService.csproj", "{67849211-1FB8-453C-A840-13E2EFAD8C3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.WcfService", "Scz.WcfService\Scz.WcfService.csproj", "{10B296C1-121B-4A71-AB1B-10B51986D4BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.BlazorApp", "Scz.BlazorApp\Scz.BlazorApp.csproj", "{86920793-56F6-4A09-904E-52C31E3CF733}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scz.BlazorApp", "Scz.BlazorApp\Scz.BlazorApp.csproj", "{86920793-56F6-4A09-904E-52C31E3CF733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scz.WorkerService", "Scz.WorkerService\Scz.WorkerService.csproj", "{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -333,6 +335,14 @@ Global
 		{86920793-56F6-4A09-904E-52C31E3CF733}.Release|Any CPU.Build.0 = Release|Any CPU
 		{86920793-56F6-4A09-904E-52C31E3CF733}.Release|x86.ActiveCfg = Release|Any CPU
 		{86920793-56F6-4A09-904E-52C31E3CF733}.Release|x86.Build.0 = Release|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Debug|x86.Build.0 = Debug|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Release|x86.ActiveCfg = Release|Any CPU
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -368,6 +378,7 @@ Global
 		{67849211-1FB8-453C-A840-13E2EFAD8C3A} = {CB07D4C1-1879-43F3-B137-459C8F358E67}
 		{10B296C1-121B-4A71-AB1B-10B51986D4BF} = {CB07D4C1-1879-43F3-B137-459C8F358E67}
 		{86920793-56F6-4A09-904E-52C31E3CF733} = {D18A3C4D-D5D3-4D61-B82E-AE348237FF53}
+		{74B5941F-3223-4C76-AD86-82E7A5DCFCE7} = {CB07D4C1-1879-43F3-B137-459C8F358E67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CAE6681-8D32-4B74-8C52-A3BD626D4DD9}

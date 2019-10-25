@@ -120,13 +120,13 @@ namespace Scz.ConsoleApp
          
         static void StaticClassMethod()
         {
-            Console.WriteLine(User.Count);
+            Console.WriteLine(User.Count);// 0
 
             var u = new User();
-            Console.WriteLine(User.Count);
+            Console.WriteLine(User.Count); // 1
 
             var u2 = new User();
-            Console.WriteLine(User.Count);
+            Console.WriteLine(User.Count);// 2
         }
 
         static void Method()

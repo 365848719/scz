@@ -47,10 +47,10 @@ namespace Scz.ConsoleApp
 
             string a = "2019年01月09日";
             IFormatProvider culture = new CultureInfo("zh-CN", true);
-            DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日",culture);
+            DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日", culture);
             Console.WriteLine(dt);
 
-            Console.WriteLine( 3 * 10 / 12 );
+            Console.WriteLine(3 * 10 / 12);
 
             Console.WriteLine("Hello World!");
 
@@ -80,8 +80,7 @@ namespace Scz.ConsoleApp
                 Group = x.Group
             });
 
-            var d = new A<int, string> { My = 5, Data = "1" };
-            Console.Write(d.Data + d.My);
+            GenericExample();
 
 
             //OracleTest.Test();
@@ -117,7 +116,12 @@ namespace Scz.ConsoleApp
 
         }
 
-         
+        private static void GenericExample()
+        {
+            var d = new A<int, string> { My = 5, Data = "1" };
+            Console.Write(d.Data + d.My);
+        }
+
         static void StaticClassMethod()
         {
             Console.WriteLine(User.Count);// 0

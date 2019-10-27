@@ -47,3 +47,13 @@
 /Scz/Scz.WorkerService/obj
 /Scz/Scz.Database/Scz.Database.dbmdl
 /Scz/Scz.Database/Scz.Database.jfm
+/Scz/Scz.XUnitTestProject/bin/Debug/netcoreapp3.0
+/Scz/Scz.WorkerService/bin/Debug/netcoreapp3.0
+/Scz/Scz.WcfService/bin
+/Scz/Scz.UnitTestProject/bin/Debug/netcoreapp3.0
+/Scz/Scz.GrpcService/bin/Debug/netcoreapp3.0
+/Scz/Scz.Database/bin/Debug
+/Scz/Scz.Config/bin/Debug/netcoreapp3.0
+/Scz/Scz.Cache/bin/Debug/netcoreapp3.0
+/Scz/Scz.BlazorApp/bin/Debug/netcoreapp3.0
+/Scz/Scz.Algorithm/bin/Debug/netcoreapp3.0

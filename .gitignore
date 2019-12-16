@@ -57,3 +57,8 @@
 /Scz/Scz.Cache/bin/Debug/netcoreapp3.0
 /Scz/Scz.BlazorApp/bin/Debug/netcoreapp3.0
 /Scz/Scz.Algorithm/bin/Debug/netcoreapp3.0
+/Scz/Scz.Log/bin/Debug/netcoreapp2.2
+/Scz/Scz.Log/obj
+/Scz/packages/Microsoft.Exchange.WebServices.2.2
+/Scz/Scz.Model/bin/Debug/netstandard2.1
+/Scz/Scz.Model/obj

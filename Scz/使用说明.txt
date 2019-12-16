@@ -1,0 +1,14 @@
+Scz.Aop
+Scz.Autofac
+Scz.AutoMapper
+Scz.Cache
+Scz.Config
+Scz.ConsoleApp
+Scz.EventBus
+Scz.Ioc
+Scz.Log
+Scz.MigrationsDemos
+Scz.MyConsoleApp
+Scz.Orm
+Scz.RabbitMq
+Scz.Redis

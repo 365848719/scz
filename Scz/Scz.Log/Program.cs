@@ -1,16 +1,14 @@
-﻿using System;
-using System.IO;
-
-using log4net;
+﻿using log4net;
 using log4net.Config;
 using log4net.Repository;
+using System;
+using System.IO;
 
 namespace Scz.Log
 {
-    class Program
+    internal class Program
     {
-       
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             OutputToFile();
 
@@ -19,11 +17,10 @@ namespace Scz.Log
             Console.WriteLine("Hello World!");
         }
 
-
         /// <summary>
         /// 输出到控制台
         /// </summary>
-        static void OutputToConsole()
+        private static void OutputToConsole()
         {
             ILoggerRepository repository = LogManager.CreateRepository("OutputToConsole");
             BasicConfigurator.Configure(repository);
@@ -37,7 +34,7 @@ namespace Scz.Log
         /// <summary>
         /// 输出日志到文件
         /// </summary>
-        static void OutputToFile()
+        private static void OutputToFile()
         {
             ILoggerRepository repository = LogManager.CreateRepository("OutputToFile");
             XmlConfigurator.Configure(repository, new FileInfo("config.xml"));

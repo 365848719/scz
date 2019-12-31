@@ -7,24 +7,8 @@ using System.Linq;
 
 namespace Scz.ConsoleApp
 {
-    class Hospital
-    {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Group { get; set; }
-    }
-
     // 定义委托方法
     delegate decimal CalculateBonus(decimal sales);
-
-    // 定义一个Employee类
-    class Employee
-    {
-        public string name;
-        public decimal sales;
-        public decimal bonus;
-        public CalculateBonus calculation_algorithm;
-    }
 
     public class DynamicClass
     {
@@ -34,13 +18,95 @@ namespace Scz.ConsoleApp
             Num2 = n2;
         }
 
+        public dynamic DynamicAction { get; set; }
         public int Num1 { get; set; }
         public int Num2 { get; set; }
-        public dynamic DynamicAction { get; set; }
     }
 
+    // 定义一个Employee类
+    class Employee
+    {
+        public decimal bonus;
+        public CalculateBonus calculation_algorithm;
+        public string name;
+        public decimal sales;
+    }
+
+    class Hospital
+    {
+        public string Group { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+    }
     class Program
     {
+        private static void Closure()
+        {
+            var c7Test = new C7Test();
+            var dateTimes = new List<DateTime> { DateTime.Today, DateTime.Today.AddDays(-1) };
+
+            var dateResult = c7Test.Max_Local_Function(dateTimes);
+            Console.WriteLine(dateResult);
+        }
+
+        private static List<Hospital> CreateHospital()
+        {
+            List<Hospital> allHospital = new List<Hospital>();
+
+            List<string> groups = new List<string> { "机构组1", "机构组2", "机构组3" };
+
+            for (var i = 0; i < 10000; i++)
+            {
+                for (var j = 0; j < groups.Count; j++)
+                {
+                    var group = groups[j];
+                    allHospital.Add(new Hospital
+                    {
+                        Id = i.ToString(),
+                        Name = string.Format("医院：{0}", i),
+                        Group = group
+                    });
+                }
+            }
+
+
+            return allHospital;
+        }
+
+        private static void Example()
+        {
+            DynamicClass d = new DynamicClass(1, 2);
+            d.DynamicAction = new Func<int, int, double>((x, y) => x + y);
+
+            Console.WriteLine(d.DynamicAction.Invoke(d.Num1, d.Num2));
+
+            dynamic t = new ExpandoObject();
+            t.Name = "ServiceBoy";
+            t.Action = new Func<string>(() => t.Name);
+            Console.WriteLine(t.Action());
+
+            dynamic myD = new DynamicObjectDemo();
+            myD.Name = "Tom";
+            Console.WriteLine(myD.Name);
+
+            dynamic myT = new DynamicObjectDemo();
+            Console.WriteLine(myT.Say("Hello"));
+
+            dynamic integerValue = 1;
+            dynamic stringValue = " a string";
+            dynamic result = integerValue + stringValue;
+            Console.WriteLine(result.ToString());
+
+            ExampleDemo example = new ExampleDemo();
+            Console.WriteLine(example.Add(num: 3, num2: 5));
+        }
+
+        private static void GenericExample()
+        {
+            var d = new A<int, string> { My = 5, Data = "1" };
+            Console.Write(d.Data + d.My);
+        }
+
         static void Main(string[] args)
         {
             StaticClassMethod();
@@ -115,24 +181,6 @@ namespace Scz.ConsoleApp
             Console.ReadLine();
 
         }
-
-        private static void GenericExample()
-        {
-            var d = new A<int, string> { My = 5, Data = "1" };
-            Console.Write(d.Data + d.My);
-        }
-
-        static void StaticClassMethod()
-        {
-            Console.WriteLine(User.Count);// 0
-
-            var u = new User();
-            Console.WriteLine(User.Count); // 1
-
-            var u2 = new User();
-            Console.WriteLine(User.Count);// 2
-        }
-
         static void Method()
         {
             // double m = Math.Pow(10, 28);
@@ -204,67 +252,15 @@ namespace Scz.ConsoleApp
 
         }
 
-        private static List<Hospital> CreateHospital()
+        static void StaticClassMethod()
         {
-            List<Hospital> allHospital = new List<Hospital>();
+            Console.WriteLine(User.Count);// 0
 
-            List<string> groups = new List<string> { "机构组1", "机构组2", "机构组3" };
+            var u = new User();
+            Console.WriteLine(User.Count); // 1
 
-            for (var i = 0; i < 10000; i++)
-            {
-                for (var j = 0; j < groups.Count; j++)
-                {
-                    var group = groups[j];
-                    allHospital.Add(new Hospital
-                    {
-                        Id = i.ToString(),
-                        Name = string.Format("医院：{0}", i),
-                        Group = group
-                    });
-                }
-            }
-
-
-            return allHospital;
+            var u2 = new User();
+            Console.WriteLine(User.Count);// 2
         }
-
-
-        private static void Closure()
-        {
-            var c7Test = new C7Test();
-            var dateTimes = new List<DateTime> { DateTime.Today, DateTime.Today.AddDays(-1) };
-
-            var dateResult = c7Test.Max_Local_Function(dateTimes);
-            Console.WriteLine(dateResult);
-        }
-
-        private static void Example()
-        {
-            DynamicClass d = new DynamicClass(1, 2);
-            d.DynamicAction = new Func<int, int, double>((x, y) => x + y);
-
-            Console.WriteLine(d.DynamicAction.Invoke(d.Num1, d.Num2));
-
-            dynamic t = new ExpandoObject();
-            t.Name = "ServiceBoy";
-            t.Action = new Func<string>(() => t.Name);
-            Console.WriteLine(t.Action());
-
-            dynamic myD = new DynamicObjectDemo();
-            myD.Name = "Tom";
-            Console.WriteLine(myD.Name);
-
-            dynamic myT = new DynamicObjectDemo();
-            Console.WriteLine(myT.Say("Hello"));
-
-            dynamic integerValue = 1;
-            dynamic stringValue = " a string";
-            dynamic result = integerValue + stringValue;
-            Console.WriteLine(result.ToString());
-
-            ExampleDemo example = new ExampleDemo();
-            Console.WriteLine(example.Add(num: 3, num2: 5));
-        }
-
     }
 }

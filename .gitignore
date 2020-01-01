@@ -66,3 +66,6 @@
 /Scz/Scz.IBll/obj
 /Scz/Scz.Bll/bin/Debug/netstandard2.0
 /Scz/Scz.Bll/obj
+/Scz/Scz.WebApi3.1/obj
+/Scz/Scz.WebApi3_1/bin/Debug/netcoreapp3.1
+/Scz/Scz.WebApi3_1/obj

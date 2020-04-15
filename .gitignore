@@ -69,3 +69,8 @@
 /Scz/Scz.WebApi3.1/obj
 /Scz/Scz.WebApi3_1/bin/Debug/netcoreapp3.1
 /Scz/Scz.WebApi3_1/obj
+/Scz/Scz.RabbitMq.Message/bin/Debug/netstandard2.0
+/Scz/Scz.RabbitMq.Message/obj
+/Scz/Scz.RabbitMq.Subcriber/bin/Debug/netcoreapp3.1
+/Scz/Scz.RabbitMq.Subcriber/obj
+/Scz/Scz.WcfService/obj/Release

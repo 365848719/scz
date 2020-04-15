@@ -1,4 +1,5 @@
 ﻿using Scz.ConsoleApp.C7;
+using Scz.ConsoleApp.ClassDemo;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -40,13 +41,106 @@ namespace Scz.ConsoleApp
     }
     class Program
     {
+        static void Cal2(int n)
+        {
+            int[] array = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                int r;
+                do
+                {
+                    r = new Random().Next(1000);                   
+                }
+                while (r % 3 == 0);
+
+                array[i] = r;
+            }
+
+            var sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                sum += array[i] % 9 == 0 ? array[i] : 0;
+            }
+
+            Console.WriteLine(" 9 的倍数：" + sum);
+        }
+
+        static void Cal(int maxNumber)
+        {
+            var dic = new Dictionary<int, int>();
+
+            for (int i = 1; i <= maxNumber; i++)
+            {
+                var leftSum = LeftCal(i);
+
+                for (int j = i+1; j <= maxNumber; j++)
+                {
+                    var rightSum = RightCal(i+2, j);
+
+                    if (leftSum == rightSum)
+                    {
+                        dic.Add(i+1, j);
+                        break;
+                    }                   
+                }             
+            }
+
+            foreach (var item in dic.Keys)
+            {
+                Console.WriteLine(string.Format("住 {0} 号，最大门牌 {1} ",item,dic[item]));
+            }
+
+
+            int LeftCal(int max)
+            {
+                var sum = 0;
+                for (int i = 1; i <= max; i++)
+                {
+                    sum += i;
+                }
+
+                return sum;
+
+            }
+
+            int RightCal(int left ,int right)
+            {
+                var sum = 0;
+                for (int i = left; i <= right; i++)
+                {
+                    sum += i;    
+                }
+
+                return sum;
+
+            }
+            
+        }
+
         private static void Closure()
         {
+            C7Test();
+        }
+
+        static void C7Test() {
             var c7Test = new C7Test();
             var dateTimes = new List<DateTime> { DateTime.Today, DateTime.Today.AddDays(-1) };
 
             var dateResult = c7Test.Max_Local_Function(dateTimes);
             Console.WriteLine(dateResult);
+
+        }
+
+        static void ClassDemoTest() {
+            Console.WriteLine("---------------一般初始化顺序---------------");
+            var child1 = new Child1();
+            Console.WriteLine("\n---------------子类静态字段初始化需要使用父类静态字段时初始化顺序---------------");
+            var child2 = new Child2();
+            Console.WriteLine("\n---------------子类静态构造函数中使用父类静态字段时初始化顺序---------------");
+            var child3 = new Child3();
+
+            Console.ReadKey();
+
         }
 
         private static List<Hospital> CreateHospital()
@@ -109,29 +203,33 @@ namespace Scz.ConsoleApp
 
         static void Main(string[] args)
         {
-            StaticClassMethod();
+            Cal(100);
 
-            string a = "2019年01月09日";
-            IFormatProvider culture = new CultureInfo("zh-CN", true);
-            DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日", culture);
-            Console.WriteLine(dt);
+            //ClassDemoTest();
 
-            Console.WriteLine(3 * 10 / 12);
+            //StaticClassMethod();
 
-            Console.WriteLine("Hello World!");
+            //string a = "2019年01月09日";
+            //IFormatProvider culture = new CultureInfo("zh-CN", true);
+            //DateTime dt = DateTime.ParseExact(a, "yyyy年MM月dd日", culture);
+            //Console.WriteLine(dt);
 
-            var allHospitals = CreateHospital();
+            //Console.WriteLine(3 * 10 / 12);
 
-            var b = allHospitals.GroupBy(x => new
-            {
-                x.Id,
-                x.Name
-            }).Select(g => new Hospital
-            {
-                Id = g.Key.Id,
-                Name = g.Key.Name,
-                Group = string.Join(",", g.Select(x => x.Group).ToArray())
-            }).ToList();
+            //Console.WriteLine("Hello World!");
+
+            //var allHospitals = CreateHospital();
+
+            //var b = allHospitals.GroupBy(x => new
+            //{
+            //    x.Id,
+            //    x.Name
+            //}).Select(g => new Hospital
+            //{
+            //    Id = g.Key.Id,
+            //    Name = g.Key.Name,
+            //    Group = string.Join(",", g.Select(x => x.Group).ToArray())
+            //}).ToList();
 
             //allHospitals.GroupBy(x => x.Id, y => y.Name).Select(x => new Hospital
             //{
@@ -139,14 +237,14 @@ namespace Scz.ConsoleApp
             //    Group = string.Join(x.Select(y => y.Group).ToArray())
             //});
 
-            allHospitals.Select(x => new Hospital
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Group = x.Group
-            });
+            //allHospitals.Select(x => new Hospital
+            //{
+            //    Id = x.Id,
+            //    Name = x.Name,
+            //    Group = x.Group
+            //});
 
-            GenericExample();
+            //GenericExample();
 
 
             //OracleTest.Test();
@@ -178,7 +276,7 @@ namespace Scz.ConsoleApp
             //Example();
 
 
-            Console.ReadLine();
+            Console.Read();
 
         }
         static void Method()

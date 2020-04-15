@@ -8,8 +8,8 @@ namespace Scz.Redis
     {
         static void Main(string[] args)
         {          
-            //prefix 代码，key 前面添加的前缀
-            var csredis = new CSRedisClient("127.0.0.1:6379,password=123123,defaultDatabase=0,poolsize=50,ssl=false,writeBuffer=10240,prefix=db");
+            //prefix 代表，key 前面添加的前缀(可以为空)
+            var csredis = new CSRedisClient("127.0.0.1:6379,password=123456,defaultDatabase=0,poolsize=50,ssl=false,writeBuffer=10240,prefix=");
 
             csredis.Set("test1", DateTime.Now, 600);
             var test1 = csredis.Get("test1");

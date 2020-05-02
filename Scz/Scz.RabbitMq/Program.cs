@@ -8,6 +8,17 @@ namespace Scz.RabbitMq
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                RpcTest();
+            }
+
+            //Publish();
+
+        }
+
+        private static void Publish()
+        {
             var connStr = "host=127.0.0.1;virtualHost=sczVHost;username=scz;password=1";
 
             using (var bus = RabbitHutch.CreateBus(connStr))
@@ -22,20 +33,24 @@ namespace Scz.RabbitMq
                     });
                 }
             }
-
-
         }
 
-        private static void RpcTest(string connStr)
+        private static void RpcTest()
         {
-            while (true)
+            var connStr = "host=127.0.0.1;virtualHost=sczVHost;username=scz;password=1";
+
+
+            using (var bus = RabbitHutch.CreateBus(connStr))
             {
-                using (var bus = RabbitHutch.CreateBus(connStr))
+                var dispose = bus.Respond<TestRequestMessage, TestResponseMessage>((request) =>
                 {
-                    bus.Respond<TestRequestMessage, TestResponseMessage>(request =>
-                        new TestResponseMessage { Text = request.Text + " all done!" });
-                }
+                    Console.WriteLine($"请求的信息：{request.Text}");
+                    return new TestResponseMessage { Text = request.Text + " all done!" };
+                });
+
+                dispose.Dispose();
             }
+
         }
     }
 }

@@ -8,6 +8,17 @@ namespace Scz.RabbitMq.Subcriber
     {
         public static void Main(string[] args)
         {
+            while(true)
+            {
+                RpcTest();
+            }
+
+            //Subscribe();
+
+        }
+
+        private static void Subscribe()
+        {
             var connStr = "host=127.0.0.1;virtualHost=sczVHost;username=scz;password=1";
 
             using (var bus = RabbitHutch.CreateBus(connStr))
@@ -17,11 +28,12 @@ namespace Scz.RabbitMq.Subcriber
                 Console.WriteLine("Listening for messages. Hit <return> to quit.");
                 Console.ReadLine();
             }
-
         }
 
-        private static void RpcTest(string connStr)
+        private static void RpcTest()
         {
+            var connStr = "host=127.0.0.1;virtualHost=sczVHost;username=scz;password=1";
+
             var request = new TestRequestMessage { Text = "Hello from the client! " };
             using (var bus = RabbitHutch.CreateBus(connStr))
             {

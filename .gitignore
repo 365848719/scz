@@ -74,3 +74,5 @@
 /Scz/Scz.RabbitMq.Subcriber/bin/Debug/netcoreapp3.1
 /Scz/Scz.RabbitMq.Subcriber/obj
 /Scz/Scz.WcfService/obj/Release
+/Scz/Scz.CqrsMediatR/bin/Debug/netcoreapp3.1
+/Scz/Scz.CqrsMediatR/obj

@@ -1,0 +1,49 @@
+2020-05-04 18:55:48.944 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-04 18:55:48.958 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/swagger/index.html  
+2020-05-04 18:55:49.042 +08:00 [INF] Hosting environment: Development
+2020-05-04 18:55:49.042 +08:00 [INF] Content root path: C:\scz.git\Scz\Scz.WebApi3_1
+2020-05-04 18:55:49.233 +08:00 [INF] Request finished in 277.9394ms 200 text/html; charset=utf-8
+2020-05-04 18:55:49.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/swagger/v1/swagger.json  
+2020-05-04 18:55:50.076 +08:00 [INF] Request finished in 578.6618ms 200 application/json; charset=utf-8
+2020-05-04 18:55:56.245 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/api/Home  
+2020-05-04 18:55:56.251 +08:00 [INF] Executing endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 18:55:56.271 +08:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Scz.WebApi3_1.Controllers.HomeController (Scz.WebApi3_1).
+2020-05-04 18:56:00.873 +08:00 [INF] Serilog test info.
+2020-05-04 18:56:00.874 +08:00 [ERR] Serilog test error.
+2020-05-04 18:56:00.878 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-04 18:56:00.888 +08:00 [INF] Executed action Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1) in 4612.7182ms
+2020-05-04 18:56:00.891 +08:00 [INF] Executed endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 18:56:00.892 +08:00 [INF] Request finished in 4647.7083ms 200 application/json; charset=utf-8
+2020-05-04 19:03:44.067 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-04 19:03:44.134 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-04 19:03:44.135 +08:00 [INF] Hosting environment: Development
+2020-05-04 19:03:44.136 +08:00 [INF] Content root path: C:\scz.git\Scz\Scz.WebApi3_1
+2020-05-04 19:03:45.090 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-04 19:03:45.328 +08:00 [INF] Request finished in 242.8537ms 200 text/html; charset=utf-8
+2020-05-04 19:03:45.493 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-04 19:03:46.037 +08:00 [INF] Request finished in 543.4674ms 200 application/json; charset=utf-8
+2020-05-04 19:03:51.975 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Home  
+2020-05-04 19:03:51.981 +08:00 [INF] Executing endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 19:03:52.001 +08:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Scz.WebApi3_1.Controllers.HomeController (Scz.WebApi3_1).
+2020-05-04 19:03:55.890 +08:00 [INF] Serilog test info.
+2020-05-04 19:04:04.813 +08:00 [ERR] Serilog test error.
+2020-05-04 19:04:11.957 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-04 19:04:11.971 +08:00 [INF] Executed action Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1) in 19960.1628ms
+2020-05-04 19:04:11.976 +08:00 [INF] Executed endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 19:04:11.980 +08:00 [INF] Request finished in 20005.7312ms 200 application/json; charset=utf-8
+2020-05-04 19:04:43.145 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-04 19:04:43.160 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/swagger/index.html  
+2020-05-04 19:04:43.200 +08:00 [INF] Hosting environment: Development
+2020-05-04 19:04:43.201 +08:00 [INF] Content root path: C:\scz.git\Scz\Scz.WebApi3_1
+2020-05-04 19:04:43.411 +08:00 [INF] Request finished in 254.7324ms 200 text/html; charset=utf-8
+2020-05-04 19:04:43.541 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/swagger/v1/swagger.json  
+2020-05-04 19:04:44.121 +08:00 [INF] Request finished in 580.7649ms 200 application/json; charset=utf-8
+2020-05-04 19:04:49.596 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:38689/api/Home  
+2020-05-04 19:04:49.603 +08:00 [INF] Executing endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 19:04:49.626 +08:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Scz.WebApi3_1.Controllers.HomeController (Scz.WebApi3_1).
+2020-05-04 19:04:52.209 +08:00 [INF] Serilog test info.
+2020-05-04 19:04:52.209 +08:00 [ERR] Serilog test error.
+2020-05-04 19:04:52.213 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-04 19:04:52.224 +08:00 [INF] Executed action Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1) in 2593.1602ms
+2020-05-04 19:04:52.226 +08:00 [INF] Executed endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-04 19:04:52.228 +08:00 [INF] Request finished in 2631.5369ms 200 application/json; charset=utf-8

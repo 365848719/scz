@@ -1,19 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Threading.Tasks;
 
 using AspectCore.Configuration;
 using AspectCore.Extensions.DependencyInjection;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Scz.WebApi3_1.Attribute;
 using Scz.WebApi3_1.Services;
 
@@ -40,6 +33,7 @@ namespace Scz.WebApi3_1
 
             services.AddControllers();
 
+            services.AddSwaggerDocument(); //注册Swagger 服务
             services.AddSingleton<ICustomService, CustomService>();
 
             //var serviceContainer = services.ToServiceContainer();//容器
@@ -64,6 +58,10 @@ namespace Scz.WebApi3_1
             {
                 endpoints.MapControllers();
             });
+
+            app.UseOpenApi(); //添加swagger生成api文档（默认路由文档 /swagger/v1/swagger.json）
+            app.UseSwaggerUi3();//添加Swagger UI到请求管道中(默认路由: /swagger).
+
         }
     }
 }

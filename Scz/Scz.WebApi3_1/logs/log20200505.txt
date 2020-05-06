@@ -1,0 +1,45 @@
+2020-05-05 18:02:05.540 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-05 18:02:05.642 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-05 18:02:05.643 +08:00 [INF] Hosting environment: Development
+2020-05-05 18:02:05.644 +08:00 [INF] Content root path: C:\scz.git\Scz\Scz.WebApi3_1
+2020-05-05 18:02:06.085 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-05 18:02:06.464 +08:00 [INF] Request finished in 383.3662ms 200 text/html; charset=utf-8
+2020-05-05 18:02:06.509 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-05 18:02:06.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-05 18:02:06.683 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-05 18:02:06.701 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-05 18:02:06.701 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-05 18:02:06.701 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-05 18:02:06.707 +08:00 [INF] Request finished in 23.2742ms 200 text/css
+2020-05-05 18:02:06.707 +08:00 [INF] Request finished in 197.7422ms 200 application/javascript
+2020-05-05 18:02:06.707 +08:00 [INF] Request finished in 173.0835ms 200 application/javascript
+2020-05-05 18:02:06.892 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-05 18:02:07.566 +08:00 [INF] Request finished in 674.1775ms 200 application/json; charset=utf-8
+2020-05-05 18:02:25.116 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Home  
+2020-05-05 18:02:25.133 +08:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '2'. Candidate actions: Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)
+2020-05-05 18:02:25.140 +08:00 [INF] Executing endpoint 'null'
+2020-05-05 18:02:25.153 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-05 18:02:25.166 +08:00 [INF] Executed endpoint 'null'
+2020-05-05 18:02:25.168 +08:00 [INF] Request finished in 52.874ms 400 application/json; charset=utf-8
+2020-05-05 18:02:33.238 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Home  
+2020-05-05 18:02:33.242 +08:00 [INF] Executing endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-05 18:02:33.261 +08:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Scz.WebApi3_1.Controllers.HomeController (Scz.WebApi3_1).
+2020-05-05 18:02:38.825 +08:00 [INF] Serilog test info.
+2020-05-05 18:02:38.886 +08:00 [ERR] Serilog test error.
+2020-05-05 18:02:39.654 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-05 18:02:39.673 +08:00 [INF] Executed action Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1) in 6400.647ms
+2020-05-05 18:02:39.677 +08:00 [INF] Executed endpoint 'Scz.WebApi3_1.Controllers.HomeController.Get (Scz.WebApi3_1)'
+2020-05-05 18:02:39.678 +08:00 [INF] Request finished in 6440.1527ms 200 application/json; charset=utf-8
+2020-05-05 18:27:32.831 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-05 18:27:32.905 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-05 18:27:32.906 +08:00 [INF] Hosting environment: Development
+2020-05-05 18:27:32.907 +08:00 [INF] Content root path: C:\scz.git\Scz\Scz.WebApi3_1
+2020-05-05 18:27:33.752 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-05 18:27:33.988 +08:00 [INF] Request finished in 239.8193ms 200 text/html; charset=utf-8
+2020-05-05 18:27:34.236 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-05 18:27:34.763 +08:00 [INF] Request finished in 527.1315ms 200 application/json; charset=utf-8
+2020-05-05 18:27:58.399 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-05 18:27:58.405 +08:00 [INF] Request finished in 5.8668ms 200 application/json; charset=utf-8
+2020-05-05 18:27:58.482 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-05-05 18:27:58.485 +08:00 [INF] Request finished in 2.9127ms 404 
+2020-05-05 18:28:49.006 +08:00 [INF] Application is shutting down...

@@ -24,6 +24,13 @@ namespace Scz.WebApi3_1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApiVersioning(o =>
+            {
+                o.ReportApiVersions = true;//return versions in a response header
+                o.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);//default version select 
+                o.AssumeDefaultVersionWhenUnspecified = true;//if not specifying an api version,show the default version
+            });
+
             //根据属性注入来配置全局拦截器
             services.ConfigureDynamicProxy(config =>
             {
@@ -33,7 +40,43 @@ namespace Scz.WebApi3_1
 
             services.AddControllers();
 
-            services.AddSwaggerDocument(); //注册Swagger 服务
+          //  services.AddSwaggerGen(s =>
+          //  {
+          //      //...
+
+          //      //Show the api version in url address
+          //      s.DocInclusionPredicate((version, apiDescription) =>
+          //      {
+          //      if (!version.Equals(apiDescription.GroupName))
+          //          return false; var values = apiDescription.RelativePath
+          //          .Split('/')
+          //          .Select(v => v.Replace("v{version}", apiDescription.GroupName)); apiDescription.RelativePath = string.Join("/", values);
+          //      return true;
+
+          //);
+          //  });
+
+            services.AddSwaggerDocument(config=> {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "ToDo API";
+                    document.Info.Description = "A simple ASP.NET Core web API";
+                    document.Info.TermsOfService = "None";
+                    document.Info.Contact = new NSwag.OpenApiContact
+                    {
+                        Name = "Shayne Boyer",
+                        Email = string.Empty,
+                        Url = "https://twitter.com/spboyer"
+                    };
+                    document.Info.License = new NSwag.OpenApiLicense
+                    {
+                        Name = "Use under LICX",
+                        Url = "https://example.com/license"
+                    };
+                };
+            }); //注册Swagger 服务
+
             services.AddSingleton<ICustomService, CustomService>();
 
             //var serviceContainer = services.ToServiceContainer();//容器

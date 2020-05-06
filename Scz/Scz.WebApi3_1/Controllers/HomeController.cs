@@ -10,7 +10,8 @@ using Scz.WebApi3_1.Services;
 
 namespace Scz.WebApi3_1.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class HomeController : ControllerBase
     {
